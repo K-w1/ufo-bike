@@ -1,9 +1,7 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
-		</view>
+	<view class="wrap">
+		<text>uFo</text>
+		<button @click="toLogin">注册/登录</button>
 	</view>
 </template>
 
@@ -11,42 +9,44 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			toLogin(){
+				uni.navigateTo({
+					url:'/pages/login/login'
+				})
+			}
 		}
 	}
 </script>
 
-<style>
-	.content {
+<style lang="scss">
+.wrap{
+	background: #666;
+	padding-bottom: 152rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	text{
+		font-size: 100rpx;
+		color: #fff;
+		font-weight: 500;
+		margin-bottom: 56rpx;
+	}
+	button{
+		width: 382rpx;
+		height: 72rpx;
+		border-radius: 32rpx;
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		justify-content: center;
+		font-size: 28rpx;
 	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+}
 </style>

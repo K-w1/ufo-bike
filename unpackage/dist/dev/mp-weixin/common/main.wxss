@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1759783 */
+  src: url('https://at.alicdn.com/t/font_1759783_al0g1xy8kzv.eot');
+  src: url('https://at.alicdn.com/t/font_1759783_al0g1xy8kzv.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_1759783_al0g1xy8kzv.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/font_1759783_al0g1xy8kzv.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_1759783_al0g1xy8kzv.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_1759783_al0g1xy8kzv.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconweixin:before {
+  content: "\e637";
+}
+.iconzhifubao:before {
+  content: "\e60a";
+}
+.iconzhifubao1:before {
+  content: "\e68a";
+}
+.iconweixin1:before {
+  content: "\e607";
+}
+
+/*每个页面公共css */
+page{
+		font-size: 28rpx;
+		color:#333;
+		letter-spacing: 3rpx;
+		height: 100%;
+}
+.wrap{
+		height: 100%;
+}
+view,text,._div,._span,input{
+		box-sizing: border-box;
+}
+

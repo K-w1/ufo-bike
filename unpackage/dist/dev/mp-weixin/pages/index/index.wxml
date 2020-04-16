@@ -1,0 +1,1 @@
+<view class="wrap"><text>uFo</text><button data-event-opts="{{[['tap',[['toLogin',['$event']]]]]}}" bindtap="__e">注册/登录</button></view>

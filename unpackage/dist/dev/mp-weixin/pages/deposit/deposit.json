@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "押金交纳",
+  "usingComponents": {
+    "uni-steps": "/components/uni-steps/uni-steps"
+  }
+}
